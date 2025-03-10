@@ -11,7 +11,7 @@ def scan_wifi():
         return scan_wifi_windows()
     else:
         return {"error": "Unsupported OS"}
-
+   
 def scan_wifi_linux():
     try:
         result = subprocess.run(
